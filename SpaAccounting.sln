@@ -1,0 +1,462 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CEEA87EC-6AE7-4147-A87C-0D43FB64218D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\Octo.exe = .nuget\Octo.exe
+		.nuget\XmlPreprocess.exe = .nuget\XmlPreprocess.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{C12795DB-649D-4877-BA9B-1FE864445B29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaAccounting", "UI\SpaAccounting\SpaAccounting.csproj", "{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919}"
+	ProjectSection(ProjectDependencies) = postProject
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC} = {05358385-CAE6-48B3-A448-09D9AD1C5ECC}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{801CDA11-AFDA-40C4-801F-847F8AA3B440}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BS", "BS", "{3BC9D20C-1B49-4E0B-8EEF-94A49A2B7AF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceProxy", "ServiceProxy", "{3242EF52-F42F-459F-B8A2-439F82173DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "Domain\DataAccess\DataAccess.csproj", "{CCCB4FC0-8B01-4338-BF06-12B183CECDC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "Domain\Delegate\Delegate.csproj", "{D300631F-6749-488E-9246-044B30348759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModel", "Domain\DomainModel\DomainModel.csproj", "{93E59DE6-1DA5-4415-B3A5-F09AE673036E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting.ServiceProxy", "Accounting.ServiceProxy\Accounting.ServiceProxy.csproj", "{07CB1631-9250-4B28-B56F-D5DC5A6D7A64}"
+	ProjectSection(ProjectDependencies) = postProject
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC} = {05358385-CAE6-48B3-A448-09D9AD1C5ECC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessServices", "BS\BusinessServices\BusinessServices.csproj", "{05358385-CAE6-48B3-A448-09D9AD1C5ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessSvcImpl", "BS\BusinessSvcImpl\BusinessSvcImpl.csproj", "{2E0D5D61-7466-4C40-A650-E0E42474B935}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ENV", "ENV", "{522C25E8-D6AA-47FA-852F-C38E3F77C311}"
+	ProjectSection(SolutionItems) = preProject
+		UI\SpaAccounting\Web.config.env = UI\SpaAccounting\Web.config.env
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ENV", "ENV", "{F1535036-022C-48CF-A648-2A29128CB1C4}"
+	ProjectSection(SolutionItems) = preProject
+		..\bld\ConfigUtil\configTokens.xml = ..\bld\ConfigUtil\configTokens.xml
+		BS\BusinessServices\Web.config.env = BS\BusinessServices\Web.config.env
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2203CC34-C603-4E11-B5AC-8EFF8A27783E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingAppTest", "AccountingAppTest\AccountingAppTest.csproj", "{A8EFBD8D-EC3A-41B5-98B9-C79DE9227CDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingBilling", "BS\AccountingBilling\AccountingBilling.csproj", "{F771FD43-DFC4-47EA-B481-5EB58B421A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLinkBilling", "BS\ServiceLinkBilling\ServiceLinkBilling.csproj", "{EE163AB5-6ABE-40EA-A40A-CF1C23DDEEDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLinkBillingTest", "ServiceLinkBillingTest\ServiceLinkBillingTest.csproj", "{A0D67E56-9439-4F99-906E-02006A25C192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLink.Billing.RuleModel", "Domain\ServiceLink.Billing.RuleModel\ServiceLink.Billing.RuleModel.csproj", "{20E665BE-3F73-4F9F-8495-A0BCFDE0B68D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLink.Billing.Inspection.RuleModel", "Domain\ServiceLink.Billing.Inspection.RuleModel\ServiceLink.Billing.Inspection.RuleModel.csproj", "{23AFD2DE-9DCA-45CF-8601-6713EE57C4A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InspectionBillingTest", "InspectionBillingTest\InspectionBillingTest.csproj", "{8202592B-3C27-4521-8203-99B9CEB14354}"
+	ProjectSection(ProjectDependencies) = postProject
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC} = {05358385-CAE6-48B3-A448-09D9AD1C5ECC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldServiceBilling", "BS\FieldServiceBilling\FieldServiceBilling.csproj", "{6F195B23-A4B4-4F29-8AD4-0EB45A7742CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLink.Billing.ART.RuleModel", "Domain\ServiceLink.Billing.ART.RuleModel\ServiceLink.Billing.ART.RuleModel.csproj", "{6AF9917F-AD77-43FC-8CFB-932CF1325D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLink.Billing.VPR.RuleModel", "Domain\ServiceLink.Billing.VPR.RuleModel\ServiceLink.Billing.VPR.RuleModel.csproj", "{819631A9-FFD3-41D1-978D-DF37FD77EC56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreservationBillingTest", "PreservationBillingTest\PreservationBillingTest.csproj", "{44FECD18-FC7A-4626-ACF0-B7A0DD395519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLink.Billing.Violation.RuleModel", "Domain\ServiceLink.Billing.Violation.RuleModel\ServiceLink.Billing.Violation.RuleModel.csproj", "{6469CAC5-DBF4-44C2-A068-298185D0D03C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLink.Billing.Preservation.RuleModel", "Domain\ServiceLink.Billing.Preservation.RuleModel\ServiceLink.Billing.Preservation.RuleModel.csproj", "{5BCB8C01-558B-4504-AD2D-33D2B1C652BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F20BF723-AAC8-400D-9D0D-8F1D880D3EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingTest", "AccountingTest\AccountingTest.csproj", "{F9058131-7E7A-4E41-AE1F-EEFC48777D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLink.Billing.VacancyReview.RuleModel", "Domain\ServiceLink.Billing.VacancyReview.RuleModel\ServiceLink.Billing.VacancyReview.RuleModel.csproj", "{42930179-305A-4AA8-9BC4-9115296BD244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoPackage", "OctoPackage\OctoPackage.csproj", "{A39A7764-7AC1-481F-98AD-F1C100DED39B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919} = {A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 23
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2012.fnf.com:8080/tfs/slpitt
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UI\\SpaAccounting\\SpaAccounting.csproj
+		SccProjectTopLevelParentUniqueName1 = SpaAccounting.sln
+		SccProjectName1 = UI/SpaAccounting
+		SccLocalPath1 = UI\\SpaAccounting
+		SccProjectUniqueName2 = Domain\\DataAccess\\DataAccess.csproj
+		SccProjectTopLevelParentUniqueName2 = SpaAccounting.sln
+		SccProjectName2 = Domain/DataAccess
+		SccLocalPath2 = Domain\\DataAccess
+		SccProjectUniqueName3 = Domain\\Delegate\\Delegate.csproj
+		SccProjectTopLevelParentUniqueName3 = SpaAccounting.sln
+		SccProjectName3 = Domain/Delegate
+		SccLocalPath3 = Domain\\Delegate
+		SccProjectUniqueName4 = Domain\\DomainModel\\DomainModel.csproj
+		SccProjectTopLevelParentUniqueName4 = SpaAccounting.sln
+		SccProjectName4 = Domain/DomainModel
+		SccLocalPath4 = Domain\\DomainModel
+		SccProjectUniqueName5 = Accounting.ServiceProxy\\Accounting.ServiceProxy.csproj
+		SccProjectTopLevelParentUniqueName5 = SpaAccounting.sln
+		SccProjectName5 = Accounting.ServiceProxy
+		SccLocalPath5 = Accounting.ServiceProxy
+		SccProjectUniqueName6 = BS\\BusinessServices\\BusinessServices.csproj
+		SccProjectTopLevelParentUniqueName6 = SpaAccounting.sln
+		SccProjectName6 = BS/BusinessServices
+		SccLocalPath6 = BS\\BusinessServices
+		SccProjectUniqueName7 = BS\\BusinessSvcImpl\\BusinessSvcImpl.csproj
+		SccProjectTopLevelParentUniqueName7 = SpaAccounting.sln
+		SccProjectName7 = BS/BusinessSvcImpl
+		SccLocalPath7 = BS\\BusinessSvcImpl
+		SccProjectUniqueName8 = AccountingAppTest\\AccountingAppTest.csproj
+		SccProjectTopLevelParentUniqueName8 = SpaAccounting.sln
+		SccProjectName8 = AccountingAppTest
+		SccLocalPath8 = AccountingAppTest
+		SccProjectUniqueName9 = BS\\AccountingBilling\\AccountingBilling.csproj
+		SccProjectTopLevelParentUniqueName9 = SpaAccounting.sln
+		SccProjectName9 = BS/AccountingBilling
+		SccLocalPath9 = BS\\AccountingBilling
+		SccProjectUniqueName10 = BS\\ServiceLinkBilling\\ServiceLinkBilling.csproj
+		SccProjectTopLevelParentUniqueName10 = SpaAccounting.sln
+		SccProjectName10 = BS/ServiceLinkBilling
+		SccLocalPath10 = BS\\ServiceLinkBilling
+		SccProjectUniqueName11 = ServiceLinkBillingTest\\ServiceLinkBillingTest.csproj
+		SccProjectTopLevelParentUniqueName11 = SpaAccounting.sln
+		SccProjectName11 = ServiceLinkBillingTest
+		SccLocalPath11 = ServiceLinkBillingTest
+		SccProjectUniqueName12 = Domain\\ServiceLink.Billing.RuleModel\\ServiceLink.Billing.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName12 = SpaAccounting.sln
+		SccProjectName12 = Domain/ServiceLink.Billing.RuleModel
+		SccLocalPath12 = Domain\\ServiceLink.Billing.RuleModel
+		SccProjectUniqueName13 = Domain\\ServiceLink.Billing.Inspection.RuleModel\\ServiceLink.Billing.Inspection.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName13 = SpaAccounting.sln
+		SccProjectName13 = Domain/ServiceLink.Billing.Inspection.RuleModel
+		SccLocalPath13 = Domain\\ServiceLink.Billing.Inspection.RuleModel
+		SccProjectUniqueName14 = InspectionBillingTest\\InspectionBillingTest.csproj
+		SccProjectTopLevelParentUniqueName14 = SpaAccounting.sln
+		SccProjectName14 = InspectionBillingTest
+		SccLocalPath14 = InspectionBillingTest
+		SccProjectUniqueName15 = BS\\FieldServiceBilling\\FieldServiceBilling.csproj
+		SccProjectTopLevelParentUniqueName15 = SpaAccounting.sln
+		SccProjectName15 = BS/FieldServiceBilling
+		SccLocalPath15 = BS\\FieldServiceBilling
+		SccProjectUniqueName16 = Domain\\ServiceLink.Billing.ART.RuleModel\\ServiceLink.Billing.ART.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName16 = SpaAccounting.sln
+		SccProjectName16 = Domain/ServiceLink.Billing.ART.RuleModel
+		SccLocalPath16 = Domain\\ServiceLink.Billing.ART.RuleModel
+		SccProjectUniqueName17 = Domain\\ServiceLink.Billing.VPR.RuleModel\\ServiceLink.Billing.VPR.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName17 = SpaAccounting.sln
+		SccProjectName17 = Domain/ServiceLink.Billing.VPR.RuleModel
+		SccLocalPath17 = Domain\\ServiceLink.Billing.VPR.RuleModel
+		SccProjectUniqueName18 = PreservationBillingTest\\PreservationBillingTest.csproj
+		SccProjectTopLevelParentUniqueName18 = SpaAccounting.sln
+		SccProjectName18 = PreservationBillingTest
+		SccLocalPath18 = PreservationBillingTest
+		SccProjectUniqueName19 = Domain\\ServiceLink.Billing.Violation.RuleModel\\ServiceLink.Billing.Violation.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName19 = SpaAccounting.sln
+		SccProjectName19 = Domain/ServiceLink.Billing.Violation.RuleModel
+		SccLocalPath19 = Domain\\ServiceLink.Billing.Violation.RuleModel
+		SccProjectUniqueName20 = Domain\\ServiceLink.Billing.Preservation.RuleModel\\ServiceLink.Billing.Preservation.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName20 = SpaAccounting.sln
+		SccProjectName20 = Domain/ServiceLink.Billing.Preservation.RuleModel
+		SccLocalPath20 = Domain\\ServiceLink.Billing.Preservation.RuleModel
+		SccProjectUniqueName21 = AccountingTest\\AccountingTest.csproj
+		SccProjectTopLevelParentUniqueName21 = SpaAccounting.sln
+		SccProjectName21 = AccountingTest
+		SccLocalPath21 = AccountingTest
+		SccProjectUniqueName22 = Domain\\ServiceLink.Billing.VacancyReview.RuleModel\\ServiceLink.Billing.VacancyReview.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName22 = SpaAccounting.sln
+		SccProjectName22 = Domain/ServiceLink.Billing.VacancyReview.RuleModel
+		SccLocalPath22 = Domain\\ServiceLink.Billing.VacancyReview.RuleModel
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Octo|Any CPU = Octo|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCCB4FC0-8B01-4338-BF06-12B183CECDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCB4FC0-8B01-4338-BF06-12B183CECDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCB4FC0-8B01-4338-BF06-12B183CECDC9}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{CCCB4FC0-8B01-4338-BF06-12B183CECDC9}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{CCCB4FC0-8B01-4338-BF06-12B183CECDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCB4FC0-8B01-4338-BF06-12B183CECDC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D300631F-6749-488E-9246-044B30348759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D300631F-6749-488E-9246-044B30348759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D300631F-6749-488E-9246-044B30348759}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{D300631F-6749-488E-9246-044B30348759}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{D300631F-6749-488E-9246-044B30348759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D300631F-6749-488E-9246-044B30348759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E59DE6-1DA5-4415-B3A5-F09AE673036E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E59DE6-1DA5-4415-B3A5-F09AE673036E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E59DE6-1DA5-4415-B3A5-F09AE673036E}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{93E59DE6-1DA5-4415-B3A5-F09AE673036E}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{93E59DE6-1DA5-4415-B3A5-F09AE673036E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E59DE6-1DA5-4415-B3A5-F09AE673036E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07CB1631-9250-4B28-B56F-D5DC5A6D7A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07CB1631-9250-4B28-B56F-D5DC5A6D7A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07CB1631-9250-4B28-B56F-D5DC5A6D7A64}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{07CB1631-9250-4B28-B56F-D5DC5A6D7A64}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{07CB1631-9250-4B28-B56F-D5DC5A6D7A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07CB1631-9250-4B28-B56F-D5DC5A6D7A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0D5D61-7466-4C40-A650-E0E42474B935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0D5D61-7466-4C40-A650-E0E42474B935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0D5D61-7466-4C40-A650-E0E42474B935}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{2E0D5D61-7466-4C40-A650-E0E42474B935}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{2E0D5D61-7466-4C40-A650-E0E42474B935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0D5D61-7466-4C40-A650-E0E42474B935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EFBD8D-EC3A-41B5-98B9-C79DE9227CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EFBD8D-EC3A-41B5-98B9-C79DE9227CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EFBD8D-EC3A-41B5-98B9-C79DE9227CDF}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{A8EFBD8D-EC3A-41B5-98B9-C79DE9227CDF}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{A8EFBD8D-EC3A-41B5-98B9-C79DE9227CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EFBD8D-EC3A-41B5-98B9-C79DE9227CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F771FD43-DFC4-47EA-B481-5EB58B421A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F771FD43-DFC4-47EA-B481-5EB58B421A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F771FD43-DFC4-47EA-B481-5EB58B421A02}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{F771FD43-DFC4-47EA-B481-5EB58B421A02}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{F771FD43-DFC4-47EA-B481-5EB58B421A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F771FD43-DFC4-47EA-B481-5EB58B421A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE163AB5-6ABE-40EA-A40A-CF1C23DDEEDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE163AB5-6ABE-40EA-A40A-CF1C23DDEEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE163AB5-6ABE-40EA-A40A-CF1C23DDEEDC}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{EE163AB5-6ABE-40EA-A40A-CF1C23DDEEDC}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{EE163AB5-6ABE-40EA-A40A-CF1C23DDEEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE163AB5-6ABE-40EA-A40A-CF1C23DDEEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D67E56-9439-4F99-906E-02006A25C192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D67E56-9439-4F99-906E-02006A25C192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D67E56-9439-4F99-906E-02006A25C192}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{A0D67E56-9439-4F99-906E-02006A25C192}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{A0D67E56-9439-4F99-906E-02006A25C192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D67E56-9439-4F99-906E-02006A25C192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E665BE-3F73-4F9F-8495-A0BCFDE0B68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E665BE-3F73-4F9F-8495-A0BCFDE0B68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E665BE-3F73-4F9F-8495-A0BCFDE0B68D}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{20E665BE-3F73-4F9F-8495-A0BCFDE0B68D}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{20E665BE-3F73-4F9F-8495-A0BCFDE0B68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E665BE-3F73-4F9F-8495-A0BCFDE0B68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23AFD2DE-9DCA-45CF-8601-6713EE57C4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23AFD2DE-9DCA-45CF-8601-6713EE57C4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23AFD2DE-9DCA-45CF-8601-6713EE57C4A3}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{23AFD2DE-9DCA-45CF-8601-6713EE57C4A3}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{23AFD2DE-9DCA-45CF-8601-6713EE57C4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23AFD2DE-9DCA-45CF-8601-6713EE57C4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8202592B-3C27-4521-8203-99B9CEB14354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8202592B-3C27-4521-8203-99B9CEB14354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8202592B-3C27-4521-8203-99B9CEB14354}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{8202592B-3C27-4521-8203-99B9CEB14354}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{8202592B-3C27-4521-8203-99B9CEB14354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8202592B-3C27-4521-8203-99B9CEB14354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F195B23-A4B4-4F29-8AD4-0EB45A7742CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F195B23-A4B4-4F29-8AD4-0EB45A7742CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F195B23-A4B4-4F29-8AD4-0EB45A7742CD}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{6F195B23-A4B4-4F29-8AD4-0EB45A7742CD}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{6F195B23-A4B4-4F29-8AD4-0EB45A7742CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F195B23-A4B4-4F29-8AD4-0EB45A7742CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF9917F-AD77-43FC-8CFB-932CF1325D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF9917F-AD77-43FC-8CFB-932CF1325D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF9917F-AD77-43FC-8CFB-932CF1325D8D}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{6AF9917F-AD77-43FC-8CFB-932CF1325D8D}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{6AF9917F-AD77-43FC-8CFB-932CF1325D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF9917F-AD77-43FC-8CFB-932CF1325D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{819631A9-FFD3-41D1-978D-DF37FD77EC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819631A9-FFD3-41D1-978D-DF37FD77EC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819631A9-FFD3-41D1-978D-DF37FD77EC56}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{819631A9-FFD3-41D1-978D-DF37FD77EC56}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{819631A9-FFD3-41D1-978D-DF37FD77EC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819631A9-FFD3-41D1-978D-DF37FD77EC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44FECD18-FC7A-4626-ACF0-B7A0DD395519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FECD18-FC7A-4626-ACF0-B7A0DD395519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FECD18-FC7A-4626-ACF0-B7A0DD395519}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{44FECD18-FC7A-4626-ACF0-B7A0DD395519}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{44FECD18-FC7A-4626-ACF0-B7A0DD395519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FECD18-FC7A-4626-ACF0-B7A0DD395519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6469CAC5-DBF4-44C2-A068-298185D0D03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6469CAC5-DBF4-44C2-A068-298185D0D03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6469CAC5-DBF4-44C2-A068-298185D0D03C}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{6469CAC5-DBF4-44C2-A068-298185D0D03C}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{6469CAC5-DBF4-44C2-A068-298185D0D03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6469CAC5-DBF4-44C2-A068-298185D0D03C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCB8C01-558B-4504-AD2D-33D2B1C652BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCB8C01-558B-4504-AD2D-33D2B1C652BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCB8C01-558B-4504-AD2D-33D2B1C652BE}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{5BCB8C01-558B-4504-AD2D-33D2B1C652BE}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{5BCB8C01-558B-4504-AD2D-33D2B1C652BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCB8C01-558B-4504-AD2D-33D2B1C652BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9058131-7E7A-4E41-AE1F-EEFC48777D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9058131-7E7A-4E41-AE1F-EEFC48777D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9058131-7E7A-4E41-AE1F-EEFC48777D58}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{F9058131-7E7A-4E41-AE1F-EEFC48777D58}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{F9058131-7E7A-4E41-AE1F-EEFC48777D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9058131-7E7A-4E41-AE1F-EEFC48777D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42930179-305A-4AA8-9BC4-9115296BD244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42930179-305A-4AA8-9BC4-9115296BD244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42930179-305A-4AA8-9BC4-9115296BD244}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{42930179-305A-4AA8-9BC4-9115296BD244}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{42930179-305A-4AA8-9BC4-9115296BD244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42930179-305A-4AA8-9BC4-9115296BD244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39A7764-7AC1-481F-98AD-F1C100DED39B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39A7764-7AC1-481F-98AD-F1C100DED39B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39A7764-7AC1-481F-98AD-F1C100DED39B}.Octo|Any CPU.ActiveCfg = Octo|Any CPU
+		{A39A7764-7AC1-481F-98AD-F1C100DED39B}.Octo|Any CPU.Build.0 = Octo|Any CPU
+		{A39A7764-7AC1-481F-98AD-F1C100DED39B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39A7764-7AC1-481F-98AD-F1C100DED39B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8140A7D-6DAF-422C-8CC9-E0F4B8FAE919} = {C12795DB-649D-4877-BA9B-1FE864445B29}
+		{CCCB4FC0-8B01-4338-BF06-12B183CECDC9} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{D300631F-6749-488E-9246-044B30348759} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{93E59DE6-1DA5-4415-B3A5-F09AE673036E} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{07CB1631-9250-4B28-B56F-D5DC5A6D7A64} = {3242EF52-F42F-459F-B8A2-439F82173DE9}
+		{05358385-CAE6-48B3-A448-09D9AD1C5ECC} = {3BC9D20C-1B49-4E0B-8EEF-94A49A2B7AF8}
+		{2E0D5D61-7466-4C40-A650-E0E42474B935} = {3BC9D20C-1B49-4E0B-8EEF-94A49A2B7AF8}
+		{522C25E8-D6AA-47FA-852F-C38E3F77C311} = {C12795DB-649D-4877-BA9B-1FE864445B29}
+		{F1535036-022C-48CF-A648-2A29128CB1C4} = {3BC9D20C-1B49-4E0B-8EEF-94A49A2B7AF8}
+		{2203CC34-C603-4E11-B5AC-8EFF8A27783E} = {C12795DB-649D-4877-BA9B-1FE864445B29}
+		{A8EFBD8D-EC3A-41B5-98B9-C79DE9227CDF} = {2203CC34-C603-4E11-B5AC-8EFF8A27783E}
+		{F771FD43-DFC4-47EA-B481-5EB58B421A02} = {3BC9D20C-1B49-4E0B-8EEF-94A49A2B7AF8}
+		{EE163AB5-6ABE-40EA-A40A-CF1C23DDEEDC} = {3BC9D20C-1B49-4E0B-8EEF-94A49A2B7AF8}
+		{A0D67E56-9439-4F99-906E-02006A25C192} = {2203CC34-C603-4E11-B5AC-8EFF8A27783E}
+		{20E665BE-3F73-4F9F-8495-A0BCFDE0B68D} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{23AFD2DE-9DCA-45CF-8601-6713EE57C4A3} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{8202592B-3C27-4521-8203-99B9CEB14354} = {2203CC34-C603-4E11-B5AC-8EFF8A27783E}
+		{6F195B23-A4B4-4F29-8AD4-0EB45A7742CD} = {3BC9D20C-1B49-4E0B-8EEF-94A49A2B7AF8}
+		{6AF9917F-AD77-43FC-8CFB-932CF1325D8D} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{819631A9-FFD3-41D1-978D-DF37FD77EC56} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{44FECD18-FC7A-4626-ACF0-B7A0DD395519} = {2203CC34-C603-4E11-B5AC-8EFF8A27783E}
+		{6469CAC5-DBF4-44C2-A068-298185D0D03C} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{5BCB8C01-558B-4504-AD2D-33D2B1C652BE} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+		{F9058131-7E7A-4E41-AE1F-EEFC48777D58} = {F20BF723-AAC8-400D-9D0D-8F1D880D3EE1}
+		{42930179-305A-4AA8-9BC4-9115296BD244} = {801CDA11-AFDA-40C4-801F-847F8AA3B440}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 24
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2012.fnf.com:8080/tfs/slpitt
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UI\\SpaAccounting\\SpaAccounting.csproj
+		SccProjectTopLevelParentUniqueName1 = SpaAccounting.sln
+		SccProjectName1 = UI/SpaAccounting
+		SccLocalPath1 = UI\\SpaAccounting
+		SccProjectUniqueName2 = Domain\\DataAccess\\DataAccess.csproj
+		SccProjectTopLevelParentUniqueName2 = SpaAccounting.sln
+		SccProjectName2 = Domain/DataAccess
+		SccLocalPath2 = Domain\\DataAccess
+		SccProjectUniqueName3 = Domain\\Delegate\\Delegate.csproj
+		SccProjectTopLevelParentUniqueName3 = SpaAccounting.sln
+		SccProjectName3 = Domain/Delegate
+		SccLocalPath3 = Domain\\Delegate
+		SccProjectUniqueName4 = Domain\\DomainModel\\DomainModel.csproj
+		SccProjectTopLevelParentUniqueName4 = SpaAccounting.sln
+		SccProjectName4 = Domain/DomainModel
+		SccLocalPath4 = Domain\\DomainModel
+		SccProjectUniqueName5 = Accounting.ServiceProxy\\Accounting.ServiceProxy.csproj
+		SccProjectTopLevelParentUniqueName5 = SpaAccounting.sln
+		SccProjectName5 = Accounting.ServiceProxy
+		SccLocalPath5 = Accounting.ServiceProxy
+		SccProjectUniqueName6 = BS\\BusinessServices\\BusinessServices.csproj
+		SccProjectTopLevelParentUniqueName6 = SpaAccounting.sln
+		SccProjectName6 = BS/BusinessServices
+		SccLocalPath6 = BS\\BusinessServices
+		SccProjectUniqueName7 = BS\\BusinessSvcImpl\\BusinessSvcImpl.csproj
+		SccProjectTopLevelParentUniqueName7 = SpaAccounting.sln
+		SccProjectName7 = BS/BusinessSvcImpl
+		SccLocalPath7 = BS\\BusinessSvcImpl
+		SccProjectUniqueName8 = AccountingAppTest\\AccountingAppTest.csproj
+		SccProjectTopLevelParentUniqueName8 = SpaAccounting.sln
+		SccProjectName8 = AccountingAppTest
+		SccLocalPath8 = AccountingAppTest
+		SccProjectUniqueName9 = BS\\AccountingBilling\\AccountingBilling.csproj
+		SccProjectTopLevelParentUniqueName9 = SpaAccounting.sln
+		SccProjectName9 = BS/AccountingBilling
+		SccLocalPath9 = BS\\AccountingBilling
+		SccProjectUniqueName10 = BS\\ServiceLinkBilling\\ServiceLinkBilling.csproj
+		SccProjectTopLevelParentUniqueName10 = SpaAccounting.sln
+		SccProjectName10 = BS/ServiceLinkBilling
+		SccLocalPath10 = BS\\ServiceLinkBilling
+		SccProjectUniqueName11 = ServiceLinkBillingTest\\ServiceLinkBillingTest.csproj
+		SccProjectTopLevelParentUniqueName11 = SpaAccounting.sln
+		SccProjectName11 = ServiceLinkBillingTest
+		SccLocalPath11 = ServiceLinkBillingTest
+		SccProjectUniqueName12 = Domain\\ServiceLink.Billing.RuleModel\\ServiceLink.Billing.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName12 = SpaAccounting.sln
+		SccProjectName12 = Domain/ServiceLink.Billing.RuleModel
+		SccLocalPath12 = Domain\\ServiceLink.Billing.RuleModel
+		SccProjectUniqueName13 = Domain\\ServiceLink.Billing.Inspection.RuleModel\\ServiceLink.Billing.Inspection.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName13 = SpaAccounting.sln
+		SccProjectName13 = Domain/ServiceLink.Billing.Inspection.RuleModel
+		SccLocalPath13 = Domain\\ServiceLink.Billing.Inspection.RuleModel
+		SccProjectUniqueName14 = InspectionBillingTest\\InspectionBillingTest.csproj
+		SccProjectTopLevelParentUniqueName14 = SpaAccounting.sln
+		SccProjectName14 = InspectionBillingTest
+		SccLocalPath14 = InspectionBillingTest
+		SccProjectUniqueName15 = BS\\FieldServiceBilling\\FieldServiceBilling.csproj
+		SccProjectTopLevelParentUniqueName15 = SpaAccounting.sln
+		SccProjectName15 = BS/FieldServiceBilling
+		SccLocalPath15 = BS\\FieldServiceBilling
+		SccProjectUniqueName16 = Domain\\ServiceLink.Billing.ART.RuleModel\\ServiceLink.Billing.ART.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName16 = SpaAccounting.sln
+		SccProjectName16 = Domain/ServiceLink.Billing.ART.RuleModel
+		SccLocalPath16 = Domain\\ServiceLink.Billing.ART.RuleModel
+		SccProjectUniqueName17 = Domain\\ServiceLink.Billing.VPR.RuleModel\\ServiceLink.Billing.VPR.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName17 = SpaAccounting.sln
+		SccProjectName17 = Domain/ServiceLink.Billing.VPR.RuleModel
+		SccLocalPath17 = Domain\\ServiceLink.Billing.VPR.RuleModel
+		SccProjectUniqueName18 = PreservationBillingTest\\PreservationBillingTest.csproj
+		SccProjectTopLevelParentUniqueName18 = SpaAccounting.sln
+		SccProjectName18 = PreservationBillingTest
+		SccLocalPath18 = PreservationBillingTest
+		SccProjectUniqueName19 = Domain\\ServiceLink.Billing.Violation.RuleModel\\ServiceLink.Billing.Violation.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName19 = SpaAccounting.sln
+		SccProjectName19 = Domain/ServiceLink.Billing.Violation.RuleModel
+		SccLocalPath19 = Domain\\ServiceLink.Billing.Violation.RuleModel
+		SccProjectUniqueName20 = Domain\\ServiceLink.Billing.Preservation.RuleModel\\ServiceLink.Billing.Preservation.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName20 = SpaAccounting.sln
+		SccProjectName20 = Domain/ServiceLink.Billing.Preservation.RuleModel
+		SccLocalPath20 = Domain\\ServiceLink.Billing.Preservation.RuleModel
+		SccProjectUniqueName21 = AccountingTest\\AccountingTest.csproj
+		SccProjectTopLevelParentUniqueName21 = SpaAccounting.sln
+		SccProjectName21 = AccountingTest
+		SccLocalPath21 = AccountingTest
+		SccProjectUniqueName22 = Domain\\ServiceLink.Billing.VacancyReview.RuleModel\\ServiceLink.Billing.VacancyReview.RuleModel.csproj
+		SccProjectTopLevelParentUniqueName22 = SpaAccounting.sln
+		SccProjectName22 = Domain/ServiceLink.Billing.VacancyReview.RuleModel
+		SccLocalPath22 = Domain\\ServiceLink.Billing.VacancyReview.RuleModel
+		SccProjectUniqueName23 = OctoPackage\\OctoPackage.csproj
+		SccProjectName23 = OctoPackage
+		SccLocalPath23 = OctoPackage
+	EndGlobalSection
+EndGlobal
+
